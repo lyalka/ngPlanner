@@ -4,12 +4,9 @@
   "description": "",
   "main": " ",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run server\" ",
-    "server": "node node_modules/ng2f-server/server.js",
-    "aot": "ngc -p tsconfig-aot.json && rollup -c rollup.config.js",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w"
+    "start": "ng serve"
   },
+  "angular-cli": {},
   "dependencies": {
     "@angular/common": "~4.4.4",
     "@angular/compiler": "~4.4.4",
@@ -20,6 +17,7 @@
     "@angular/platform-browser-dynamic": "~4.4.4",
     "@angular/router": "~4.4.4",
     "systemjs": "~0.20.19",
+    "ts-helpers": "^1.1.2",
     "core-js": "~2.4.1",
     "rxjs": "~5.4.3",
     "zone.js": "~0.8.18",
@@ -27,17 +25,13 @@
     "ng2f-server": "~0.2.4"
   },
   "devDependencies": {
+    "@angular/cli": "^1.4.5", 
     "@angular/compiler-cli": "^4.4.4",
-    "@angular/platform-server": "^4.4.4",
-    "@types/core-js": "0.9.30",
+    "@types/core-js": "~0.9.43",
     "@types/node": "7.0.7",
-    "concurrently": "~3.5.0",
-    "rollup": "^0.50.0",
-    "rollup-plugin-commonjs": "^8.2.1",
-    "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-uglify": "^2.0.1",
     "tslint": "^5.7.0",
-    "typescript": "~2.5.3"
+    "ts-node": "1.2.1",
+    "typescript": "2.3.0"
   },
   "author": "",
   "license": "ISC"

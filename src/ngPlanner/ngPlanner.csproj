@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <!--<DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>-->
   </PropertyGroup>
   <ItemGroup>
@@ -10,6 +12,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="client\app\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 </Project>
