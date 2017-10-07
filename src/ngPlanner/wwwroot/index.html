@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Planner</title>
+    
+    <link rel="stylesheet" href="node_modules/ng2f-bootstrap/dist/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function(err) { console.error(error); });
+    </script>
+
+
+</head>
+<body>
+    <div class="container">
+        <planner-app>
+            <style>
+                @keyframes blink {
+                    0% { opacity: .2; }
+                    20% { opacity: 1; }
+                    100% { opacity: .2; }
+                }
+                .loading {
+                    font-size: 2em;
+                    text-align: center;
+                    margin-top: 250px;
+                }
+                .loading span {
+                    animation-name: blink;
+                    animation-duration: 1.4s;
+                    animation-iteration-count: infinite;
+                    animation-fill-mode: both;
+                }
+                .loading span:nth-child(2) {
+                    animation-delay: .2s;
+                }
+                .loading span:nth-child(3) {
+                    animation-delay: .4s;
+                }
+            </style>
+            <div class="loading">
+                Loading <span>.</span> <span>.</span> <span>.</span>
+            </div>
+        </planner-app>
+    </div>
+</body>
+</html>

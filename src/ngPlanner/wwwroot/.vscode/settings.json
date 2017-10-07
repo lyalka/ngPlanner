@@ -1,0 +1,15 @@
+{
+    "cSpell.words": [
+        "ngfactory",
+        "systemjs"
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "app/*.js": true,
+        "app/*.js.map": true
+    }
+}

@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  ngplanner:
+    image: ngplanner
+    build:
+      context: ./ngPlanner
+      dockerfile: Dockerfile
