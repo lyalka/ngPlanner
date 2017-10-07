@@ -1,0 +1,2 @@
+# ngPlanner
+Test angular application
